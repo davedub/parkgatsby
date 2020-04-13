@@ -36,7 +36,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Gatsby 2.20.12 StarterKit`,
 }
 
 export default Header
