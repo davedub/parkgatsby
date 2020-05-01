@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-export class Nav extends React.Component {
+export default class Nav extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = { isOpened: false };
@@ -26,14 +26,18 @@ export class Nav extends React.Component {
 	render() {
 		const links = [
 			{ name: 'Home', to: '/' },
-			{ name: 'About', to: '/about' }
+			{ name: 'About', to: '/about' },
+			{ name: 'Page 2', to: '/page-2' }
+
 		];
 		return (
-			<div className="grid">
-				<nav className="main-nav -desktop col md-9 md-push-2">
-					{this.renderLinks(links)}
+				<nav className="navbar">
+				<ul className="navlink">
+					<li className="navlink-li">
+						{this.renderLinks(links)}
+					</li>
+				</ul>
 				</nav>
-			</div>
 		);
 	}
 }
