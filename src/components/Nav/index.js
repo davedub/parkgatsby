@@ -27,8 +27,8 @@ export default class Nav extends React.Component {
 		const links = [
 			{ name: 'Home', to: '/' },
 			{ name: 'About', to: '/about' },
-			{ name: 'Page 2', to: '/page-2' }
-
+			{ name: 'Page 2', to: '/page-2' },
+			{ name: 'Contact', to: '/contact-us' }
 		];
 		return (
 				<nav className="navbar">
