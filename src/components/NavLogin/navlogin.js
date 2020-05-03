@@ -24,7 +24,7 @@ export default function NavLogin() {
             href="/"
             onClick={event => {
               event.preventDefault()
-              logout(() => navigate(`/app/login`))
+              logout(() => navigate(`/login`))
             }}
           >
             Logout

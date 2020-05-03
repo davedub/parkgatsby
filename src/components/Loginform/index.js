@@ -2,7 +2,7 @@ import React from "react"
 import { navigate } from "gatsby"
 import { handleLogin, isLoggedIn } from "../../services/auth"
 
-import "./login.css"
+import "./loginform.css"
 
 class Login extends React.Component {
   state = {
