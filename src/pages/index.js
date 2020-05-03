@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Counter from "../components/counter"
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (

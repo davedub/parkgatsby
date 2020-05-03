@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import "./navbar.css"
+
 export default class Nav extends React.Component {
 	constructor(props) {
 		super(props);
@@ -27,7 +29,7 @@ export default class Nav extends React.Component {
 		const links = [
 			{ name: 'Home', to: '/' },
 			{ name: 'About', to: '/about' },
-			{ name: 'Page 2', to: '/page-2' },
+			{ name: 'Why', to: '/why' },
 			{ name: 'Contact', to: '/contact-us' }
 		];
 		return (

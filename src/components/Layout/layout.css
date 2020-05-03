@@ -637,35 +637,6 @@ h1.centered {
   line-height: 2em;
 }
 
-.navbar {
-  background: #a2be66;
-}
-.navbar > ul.navlink {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-  width: 100%  !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.navlink-li {
-  width: 70%;
-  font-size: calc(10px + 2vmin);
-  list-style-type: none;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-  margin: 0 !important;
-}
-
-.navlink a {
-  text-decoration: none;
-  color: white;
-}
-.navlink a:hover {
-text-decoration: none;
-color: green;
-}
 
 div.container {
   min-height: 40vh;
@@ -680,48 +651,6 @@ div.container {
   margin-bottom: 10px !important;
   padding-bottom: 5px !important;
 }
-div.buttonholder {
-  margin-bottom: 20px !important;
-}
 .footer {
   text-align: center;
-}
-.formcontainer {
-  width: 100%  !important;
-  font-weight: bold;
-  text-align: left;
-  line-height: 40px;
-  padding: 12px;
-  background-color: green;
-  color: white;
-  margin-right: 12px;
-  border-radius: 25px;
-}
-.formfields ul, li {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  list-style: none;
-  padding: 1px 1px;
-	color: #ffffff;
-	font-weight: 600;
-	margin-bottom: 5px;
-  margin-top: 5px;
-	transition: all 0.75s;
-}
-.formfields input, textarea {
-  width: 400px;
-  padding-left: 20px;
-  margin-left: 24px !important;
-}
-div.centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.submitbutton {
-  color: red;
-  font-weight: bold;
 }
