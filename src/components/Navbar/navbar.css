@@ -1,6 +1,5 @@
 .navbar {
-    background: 'rebeccapurple';
-    margin: 0 !important;
+   margin: 0 !important;
   }
   .navbar > ul.navlink {
     display: flex;

@@ -3,11 +3,12 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Navbar from "./Navbar/navbar"
-
+import NavLogin from "./NavLogin/navlogin"
 const Header = ({ siteTitle }) => (
-  <header class="app-Header">
+  <header className="app-Header">
     <div style={{padding: `12px`, display: `block`, marginBottom: `10px`, background: 'rebeccapurple'}}>
-      <h1 class="centered" style={{ margin: 0 }}>
+    <NavLogin /> 
+    <h1 class="centered" style={{ margin: 0 }}>
         <Link
           to="/"
           style={{color: `#45dea2`, fontWeight: `bold`, textDecoration: `none`}}
@@ -27,5 +28,4 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: `Gatsby 2.20.12 StarterKit`,
 }
-
 export default Header
