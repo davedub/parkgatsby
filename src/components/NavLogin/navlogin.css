@@ -12,8 +12,14 @@
 .loginlink {
 	color: white;
 }
-.loginmessage {
+.loginmessage, .welcomemessage {
 	color: white;
+}
+.loginhome {
+	color: rebeccapurple;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-top: 3px;
 }
 .loginlink:hover {
 	color: yellow;

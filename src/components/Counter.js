@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {Button} from 'reactstrap';
-// eslint-disable-next-line no-undef
 
 export default class Counter extends React.Component {
   constructor(props) {

@@ -11,22 +11,25 @@ const IndexPage = () => (
   <Layout>
   <div className="container">
     <SEO title="Home" />
-    <h1>Hey, there.</h1>
-    <p>Good to see you working on your Gatsby skills. Now, go build something great.</p>
+    <h1>{isLoggedIn() ? `Welcome Member!` : "Welcome to our website."}</h1>
+    <h5>Parkwood Club, Inc. is the homeowners' association for Parkwood Estates and Parkwood Ridge.</h5>
+    <> 
+    {isLoggedIn() ? ( 
+      <> 
+     <div> 
+     <p>You now have access to restricted resources on this website!</p>
+      <span className="fineprint">To log out, use the logout link on the top right.</span>
+      </div>
+      </>
+      ) : (
+        <>
+      <div class="memberlogin"> 
+      <p> Members, please <span class="redbold"><Link to="/login">log in</Link></span> to see restricted access content.</p>
+      </div>
+      </>
+      )}
+    </>
     <Counter initialCount={0} />
-    <p>Hello {isLoggedIn() ? getUser().name : "world"}!</p>
-    <p>
-    {isLoggedIn() ? (
-      <>
-        You are logged in, so check your{" "}
-        <Link to="/app/profile">profile</Link>
-      </>
-    ) : (
-      <>
-        Members, please <Link to="/login">log in</Link> to see your content relating to the association. 
-      </>
-    )}
-  </p>
     </div>
     </Layout>
   )

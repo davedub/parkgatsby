@@ -572,3 +572,16 @@ div.container {
 .footer {
   text-align: center;
 }
+.fineprint {
+  font-size: .8em;
+  color: rebeccapurple;
+  font-weight: bold;
+}
+.memberlogin {
+  margin-top: 12px;
+}
+.redbold a {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+}

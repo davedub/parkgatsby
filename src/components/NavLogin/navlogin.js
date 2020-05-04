@@ -8,28 +8,48 @@ import "./navlogin.css"
 export default function NavLogin() {
   let greetingMessage = ""
   if (isLoggedIn()) {
-    greetingMessage = `Hello ${getUser().name}`
+    greetingMessage = `Welcome Member!`
   } else {
     greetingMessage = ""
   }
   return (
     <div className="loginbar">
-      <span className="loginmessage">You are not logged in</span>
-      <span>{greetingMessage}</span>
+      <span className="loginmessage">
+      {isLoggedIn() ? (
+        <>
+          You are now logged in.
+        </>
+      ) : (
+        <>
+          You are not logged in.
+        </>
+      )}
+      </span>
       <nav>
-       <Link className="loginlink" to="/login">Login</Link>
         {` `}
         {isLoggedIn() ? (
           <a
-            href="/"
+          className="loginlink"   
+          href="/"
+            onClick={event => {
+              event.preventDefault()
+              logout(() => navigate(`/`))
+            }}
+          >
+            Logout
+          </a>
+        ) : (
+          <a
+          className="loginlink" 
+          href="/"
             onClick={event => {
               event.preventDefault()
               logout(() => navigate(`/login`))
             }}
           >
-            Logout
+            Login
           </a>
-        ) : null}
+        )}
       </nav>
     </div>
   )
