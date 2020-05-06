@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Parkgatsby`,
-    description: `This Gatsby starter project ships with the main Gatsby configuration files.`,
+    description: `Gatsby starter project ships with main Gatsby config files.`,
     author: `@david_witus`,
   },
   plugins: [
