@@ -12,8 +12,7 @@ const IndexPage = () => (
   <div className="container">
     <SEO title="Home" />
     <h1>{isLoggedIn() ? `Welcome Member!` : "Welcome to our website."}</h1>
-    <h5>Parkwood Club, Inc. is the homeowners' association for Parkwood Estates and Parkwood Ridge.</h5>
-    <> 
+      <> 
     {isLoggedIn() ? ( 
       <> 
      <div> 
